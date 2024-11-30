@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" href="tp.css">
+      
+   </head>
+
+   <body>
+
+      <section class="container my-5">
+         <div class="titre my-3">
+            <h1 class="bg-success"> Listes des stagiaires</h1>
+            <button class="btn btn-success plus" onclick="Formulaire()">+</button>
+         </div>
+         <button type="button" class="btn btn-secondary btn-sm">Développement Digital></button>
+         <button type="button" class="btn btn-secondary btn-sm">UI/UX</button>
+         <button type="button" class="btn btn-secondary btn-sm">Infrastructure Digital</button>
+         <button type="button" class="btn btn-secondary btn-sm">Intelligence Artificielle</button>
+
+         <div class="row container my-5" id="form">
+            <h5 class="my-4 text-success">Formulaire d'inscription</h5>
+            <input type="text" id="nom" placeholder="Nom..." class="col-4">
+            <input type="text" id="prenom" placeholder="Prénom..." class="col-4">
+            <select name="genre" id="genre" class="col-4">
+               <option value="">Genre</option>
+               <option value="Homme">Homme</option>
+               <option value="Femme">Femme</option>
+            </select>
+            <select name="specialite" id="specialite" class="col-8">
+               <option value="Développement Digital">Développement Digital</option>
+               <option value="UI/UX">UI/UX</option>
+               <option value="Infrastructure Digital">Infrastructure Digital</option>
+               <option value="Intelligence Artificielle">Intelligence Artificielle</option>
+            </select>
+            <input type="hidden" id="modifying-index">
+            <input type="text" class="col-4" placeholder="Classe ..." id="classee">
+            <input type="text" placeholder="Note M101..." class="col-4" id="note1">
+            <input type="text" placeholder="Note M102..." class="col-4" id="note2">
+            <input type="text" placeholder="Note M103..." class="col-4" id="note3">
+            <button class="btn btn-success ajouter" id="ajouter" onclick="addStudent()">Ajouter le Stagiaire</button>
+            <button class="btn btn-success changer" id="changer" onclick="modi()">changer les information</button>
+         </div>
+         
+         <div class="row my-3" id="cards"> </div>
+      </section>
+
+
+      
+      <script src="bootstrap.js"></script>
+      <script src="tp.js"></script>
+   </body>
+
+</html>
